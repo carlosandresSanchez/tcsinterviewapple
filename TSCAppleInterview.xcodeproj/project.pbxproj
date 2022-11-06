@@ -11,6 +11,14 @@
 		418330772914D83300112EC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418330762914D83300112EC9 /* ContentView.swift */; };
 		418330792914D83500112EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418330782914D83500112EC9 /* Assets.xcassets */; };
 		4183307C2914D83500112EC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4183307B2914D83500112EC9 /* Preview Assets.xcassets */; };
+		41FF06C629173709000CA08E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06C529173709000CA08E /* Login.swift */; };
+		41FF06C82917371C000CA08E /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06C72917371C000CA08E /* OnboardView.swift */; };
+		41FF06CA29173CAF000CA08E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06C929173CAF000CA08E /* HomeView.swift */; };
+		41FF06CC29174097000CA08E /* SettleUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06CB29174097000CA08E /* SettleUpView.swift */; };
+		41FF06CE29175D19000CA08E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06CD29175D19000CA08E /* CreateGroupView.swift */; };
+		41FF06D229175E2E000CA08E /* ListOfGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */; };
+		41FF06D4291761C4000CA08E /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06D3291761C4000CA08E /* GroupView.swift */; };
+		41FF06D629176208000CA08E /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06D529176208000CA08E /* AddExpenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		418330762914D83300112EC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		418330782914D83500112EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4183307B2914D83500112EC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41FF06C529173709000CA08E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		41FF06C72917371C000CA08E /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		41FF06C929173CAF000CA08E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		41FF06CB29174097000CA08E /* SettleUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleUpView.swift; sourceTree = "<group>"; };
+		41FF06CD29175D19000CA08E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
+		41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfGroupsView.swift; sourceTree = "<group>"; };
+		41FF06D3291761C4000CA08E /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		41FF06D529176208000CA08E /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,14 @@
 				418330762914D83300112EC9 /* ContentView.swift */,
 				418330782914D83500112EC9 /* Assets.xcassets */,
 				4183307A2914D83500112EC9 /* Preview Content */,
+				41FF06C529173709000CA08E /* Login.swift */,
+				41FF06C72917371C000CA08E /* OnboardView.swift */,
+				41FF06C929173CAF000CA08E /* HomeView.swift */,
+				41FF06CB29174097000CA08E /* SettleUpView.swift */,
+				41FF06CD29175D19000CA08E /* CreateGroupView.swift */,
+				41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */,
+				41FF06D3291761C4000CA08E /* GroupView.swift */,
+				41FF06D529176208000CA08E /* AddExpenseView.swift */,
 			);
 			path = TSCAppleInterview;
 			sourceTree = "<group>";
@@ -137,7 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FF06CC29174097000CA08E /* SettleUpView.swift in Sources */,
+				41FF06C82917371C000CA08E /* OnboardView.swift in Sources */,
+				41FF06D4291761C4000CA08E /* GroupView.swift in Sources */,
+				41FF06C629173709000CA08E /* Login.swift in Sources */,
 				418330772914D83300112EC9 /* ContentView.swift in Sources */,
+				41FF06CE29175D19000CA08E /* CreateGroupView.swift in Sources */,
+				41FF06D229175E2E000CA08E /* ListOfGroupsView.swift in Sources */,
+				41FF06D629176208000CA08E /* AddExpenseView.swift in Sources */,
+				41FF06CA29173CAF000CA08E /* HomeView.swift in Sources */,
 				418330752914D83300112EC9 /* TSCAppleInterviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
