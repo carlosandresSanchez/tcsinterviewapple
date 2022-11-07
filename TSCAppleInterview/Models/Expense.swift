@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Expense {
+struct Expense: Identifiable {
+    
+    let id = UUID()
+    
     enum Splits {
         case group(Group)
         case users([User])
@@ -25,4 +28,12 @@ struct Expense {
     let amount: Double
     let paiBy: User
     let splits: Splits
+    let description: String
+    
+    var amountPerSplit: Double {
+        guard splits.users.count > 1 else {
+            return 0.0
+        }
+        return amount / Double((splits.users.count + 1))
+    }
 }

@@ -26,6 +26,8 @@
 		41FF06E82918985B000CA08E /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E72918985B000CA08E /* Balance.swift */; };
 		41FF06EC29189946000CA08E /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06EB29189946000CA08E /* GroupsViewModel.swift */; };
 		41FF06EE29189BF8000CA08E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06ED29189BF8000CA08E /* HomeViewModel.swift */; };
+		41FF06F02918A94E000CA08E /* UserExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06EF2918A94E000CA08E /* UserExpensesView.swift */; };
+		41FF06F22918AA57000CA08E /* UserExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06F12918AA57000CA08E /* UserExpenseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		41FF06E72918985B000CA08E /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		41FF06EB29189946000CA08E /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 		41FF06ED29189BF8000CA08E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		41FF06EF2918A94E000CA08E /* UserExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExpensesView.swift; sourceTree = "<group>"; };
+		41FF06F12918AA57000CA08E /* UserExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExpenseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */,
 				41FF06D3291761C4000CA08E /* GroupView.swift */,
 				41FF06D529176208000CA08E /* AddExpenseView.swift */,
+				41FF06EF2918A94E000CA08E /* UserExpensesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			children = (
 				41FF06EB29189946000CA08E /* GroupsViewModel.swift */,
 				41FF06ED29189BF8000CA08E /* HomeViewModel.swift */,
+				41FF06F12918AA57000CA08E /* UserExpenseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -232,10 +238,12 @@
 				41FF06D4291761C4000CA08E /* GroupView.swift in Sources */,
 				41FF06C629173709000CA08E /* Login.swift in Sources */,
 				41FF06E629189841000CA08E /* UserBalance.swift in Sources */,
+				41FF06F02918A94E000CA08E /* UserExpensesView.swift in Sources */,
 				418330772914D83300112EC9 /* ContentView.swift in Sources */,
 				41FF06CE29175D19000CA08E /* CreateGroupView.swift in Sources */,
 				41FF06D229175E2E000CA08E /* ListOfGroupsView.swift in Sources */,
 				41FF06EC29189946000CA08E /* GroupsViewModel.swift in Sources */,
+				41FF06F22918AA57000CA08E /* UserExpenseViewModel.swift in Sources */,
 				41FF06D629176208000CA08E /* AddExpenseView.swift in Sources */,
 				41FF06CA29173CAF000CA08E /* HomeView.swift in Sources */,
 				418330752914D83300112EC9 /* TSCAppleInterviewApp.swift in Sources */,
