@@ -67,6 +67,10 @@
 		418330732914D83300112EC9 /* TSCAppleInterview */ = {
 			isa = PBXGroup;
 			children = (
+				41FF06DD291894D0000CA08E /* Factories */,
+				41FF06DC291894C8000CA08E /* Repositories */,
+				41FF06DB291894C0000CA08E /* ViewModels */,
+				41FF06DA291894B7000CA08E /* Models */,
 				41FF06D929189486000CA08E /* Views */,
 				418330782914D83500112EC9 /* Assets.xcassets */,
 				4183307A2914D83500112EC9 /* Preview Content */,
@@ -97,6 +101,34 @@
 				41FF06D529176208000CA08E /* AddExpenseView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		41FF06DA291894B7000CA08E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41FF06DB291894C0000CA08E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		41FF06DC291894C8000CA08E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		41FF06DD291894D0000CA08E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
