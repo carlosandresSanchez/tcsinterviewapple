@@ -16,8 +16,11 @@ struct UserExpensesView: View {
     
     @State private var showingSheet = false
     
-    init(vm: UserExpensesViewModel) {
+    private let seetleUpFactory: SeetleUpFactoryProtocol
+    
+    init(vm: UserExpensesViewModel, seetleUpFactory: SeetleUpFactoryProtocol) {
         self.vm = vm
+        self.seetleUpFactory = seetleUpFactory
     }
     
     var body: some View {
@@ -30,7 +33,7 @@ struct UserExpensesView: View {
                     }
                     .frame(maxWidth: .infinity)
                     .sheet(isPresented: $showingSheet) {
-                        SettleUpView()
+                        seetleUpFactory.createSettleUpView()
                     }
                     Text("Balance: $\(String(format: "%.2f", vm.balance))")
                     .frame(maxWidth: .infinity)
@@ -65,7 +68,7 @@ struct UserExpensesView_Previews: PreviewProvider {
     static var previews: some View {
         
         
-        var balance = Balance()
+        let balance = BalanceService()
         balance.addExpense(expense: expense1)
         balance.addExpense(expense: expense2)
         
@@ -74,6 +77,9 @@ struct UserExpensesView_Previews: PreviewProvider {
                                                  expense2],
                                        balance: balance.getBalanceForUser(user: carlos),
                                        user: carlos )
-        return UserExpensesView(vm: vm)
+        
+        let factory = SeetleUpFactory(user: carlos, users: [sergio, juan], balance: balance)
+        
+        return UserExpensesView(vm: vm, seetleUpFactory: factory)
     }
 }

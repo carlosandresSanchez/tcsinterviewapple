@@ -22,11 +22,12 @@
 		41FF06DF2918967E000CA08E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06DE2918967E000CA08E /* Expense.swift */; };
 		41FF06E12918976D000CA08E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E02918976D000CA08E /* Group.swift */; };
 		41FF06E4291897DB000CA08E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E3291897DB000CA08E /* User.swift */; };
-		41FF06E82918985B000CA08E /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E72918985B000CA08E /* Balance.swift */; };
+		41FF06E82918985B000CA08E /* BalanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E72918985B000CA08E /* BalanceService.swift */; };
 		41FF06EC29189946000CA08E /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06EB29189946000CA08E /* GroupsViewModel.swift */; };
 		41FF06EE29189BF8000CA08E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06ED29189BF8000CA08E /* HomeViewModel.swift */; };
 		41FF06F02918A94E000CA08E /* UserExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06EF2918A94E000CA08E /* UserExpensesView.swift */; };
 		41FF06F22918AA57000CA08E /* UserExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06F12918AA57000CA08E /* UserExpenseViewModel.swift */; };
+		41FF06F42918ED76000CA08E /* SettleUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06F32918ED76000CA08E /* SettleUpFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,11 +47,12 @@
 		41FF06DE2918967E000CA08E /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		41FF06E02918976D000CA08E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		41FF06E3291897DB000CA08E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		41FF06E72918985B000CA08E /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		41FF06E72918985B000CA08E /* BalanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceService.swift; sourceTree = "<group>"; };
 		41FF06EB29189946000CA08E /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 		41FF06ED29189BF8000CA08E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		41FF06EF2918A94E000CA08E /* UserExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExpensesView.swift; sourceTree = "<group>"; };
 		41FF06F12918AA57000CA08E /* UserExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExpenseViewModel.swift; sourceTree = "<group>"; };
+		41FF06F32918ED76000CA08E /* SettleUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleUpFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,7 @@
 				41FF06DE2918967E000CA08E /* Expense.swift */,
 				41FF06E02918976D000CA08E /* Group.swift */,
 				41FF06E3291897DB000CA08E /* User.swift */,
-				41FF06E72918985B000CA08E /* Balance.swift */,
+				41FF06E72918985B000CA08E /* BalanceService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 		41FF06DD291894D0000CA08E /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				41FF06F32918ED76000CA08E /* SettleUpFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -227,12 +230,13 @@
 			files = (
 				41FF06EE29189BF8000CA08E /* HomeViewModel.swift in Sources */,
 				41FF06E4291897DB000CA08E /* User.swift in Sources */,
-				41FF06E82918985B000CA08E /* Balance.swift in Sources */,
+				41FF06E82918985B000CA08E /* BalanceService.swift in Sources */,
 				41FF06DF2918967E000CA08E /* Expense.swift in Sources */,
 				41FF06CC29174097000CA08E /* SettleUpView.swift in Sources */,
 				41FF06C82917371C000CA08E /* OnboardView.swift in Sources */,
 				41FF06E12918976D000CA08E /* Group.swift in Sources */,
 				41FF06D4291761C4000CA08E /* GroupView.swift in Sources */,
+				41FF06F42918ED76000CA08E /* SettleUpFactory.swift in Sources */,
 				41FF06C629173709000CA08E /* Login.swift in Sources */,
 				41FF06F02918A94E000CA08E /* UserExpensesView.swift in Sources */,
 				418330772914D83300112EC9 /* ContentView.swift in Sources */,

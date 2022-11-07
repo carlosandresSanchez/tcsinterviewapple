@@ -18,7 +18,7 @@ let expense1 = Expense(users: [juan, sergio], amount: 150, paiBy: carlos, descri
 
 let expense2 = Expense(users: [juan, carlos], amount: 240, paiBy: sergio, description: "Hello 2")
 
-class Balance: ObservableObject {
+class BalanceService: ObservableObject {
     @Published var balanceSheet = [User: [User: Double]]()
      func addExpense(expense: Expense) {
         for user in expense.users {
