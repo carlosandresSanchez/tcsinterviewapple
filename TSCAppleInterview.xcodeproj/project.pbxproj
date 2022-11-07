@@ -24,6 +24,7 @@
 		41FF06E4291897DB000CA08E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E3291897DB000CA08E /* User.swift */; };
 		41FF06E629189841000CA08E /* UserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E529189841000CA08E /* UserBalance.swift */; };
 		41FF06E82918985B000CA08E /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06E72918985B000CA08E /* Balance.swift */; };
+		41FF06EC29189946000CA08E /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF06EB29189946000CA08E /* GroupsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		41FF06E3291897DB000CA08E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		41FF06E529189841000CA08E /* UserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalance.swift; sourceTree = "<group>"; };
 		41FF06E72918985B000CA08E /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		41FF06EB29189946000CA08E /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		41FF06DB291894C0000CA08E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				41FF06EB29189946000CA08E /* GroupsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				418330772914D83300112EC9 /* ContentView.swift in Sources */,
 				41FF06CE29175D19000CA08E /* CreateGroupView.swift in Sources */,
 				41FF06D229175E2E000CA08E /* ListOfGroupsView.swift in Sources */,
+				41FF06EC29189946000CA08E /* GroupsViewModel.swift in Sources */,
 				41FF06D629176208000CA08E /* AddExpenseView.swift in Sources */,
 				41FF06CA29173CAF000CA08E /* HomeView.swift in Sources */,
 				418330752914D83300112EC9 /* TSCAppleInterviewApp.swift in Sources */,

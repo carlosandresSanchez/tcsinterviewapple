@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ListOfGroupsView: View {
+    @ObservedObject var vm: GroupsViewModel
+    
+    init(vm: GroupsViewModel) {
+        self.vm = vm
+    }
+    
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
                 Text("Groups")
+                    .font(.largeTitle)
                 .padding(.horizontal)
                 VStack {
                     HStack {
@@ -24,19 +31,21 @@ struct ListOfGroupsView: View {
                     .padding(.horizontal)
                 Text("List of groups")
                 List {
-                    ForEach((0..<50)) { content in
-                        Text("\(content)")
+                    ForEach(vm.groups) { group in
+                        VStack {
+                            Text("\(group.name)")
+                            Text("\(group.name)")
+                        }
                     }
                 }
                 .listStyle(.plain)
             }
-            
         }
     }
 }
 
 struct ListOfGroupsView_Previews: PreviewProvider {
     static var previews: some View {
-        ListOfGroupsView()
+        ListOfGroupsView(vm: GroupsViewModel(groups: []))
     }
 }
