@@ -67,18 +67,9 @@
 		418330732914D83300112EC9 /* TSCAppleInterview */ = {
 			isa = PBXGroup;
 			children = (
-				418330742914D83300112EC9 /* TSCAppleInterviewApp.swift */,
-				418330762914D83300112EC9 /* ContentView.swift */,
+				41FF06D929189486000CA08E /* Views */,
 				418330782914D83500112EC9 /* Assets.xcassets */,
 				4183307A2914D83500112EC9 /* Preview Content */,
-				41FF06C529173709000CA08E /* Login.swift */,
-				41FF06C72917371C000CA08E /* OnboardView.swift */,
-				41FF06C929173CAF000CA08E /* HomeView.swift */,
-				41FF06CB29174097000CA08E /* SettleUpView.swift */,
-				41FF06CD29175D19000CA08E /* CreateGroupView.swift */,
-				41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */,
-				41FF06D3291761C4000CA08E /* GroupView.swift */,
-				41FF06D529176208000CA08E /* AddExpenseView.swift */,
 			);
 			path = TSCAppleInterview;
 			sourceTree = "<group>";
@@ -89,6 +80,23 @@
 				4183307B2914D83500112EC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41FF06D929189486000CA08E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				418330742914D83300112EC9 /* TSCAppleInterviewApp.swift */,
+				418330762914D83300112EC9 /* ContentView.swift */,
+				41FF06C529173709000CA08E /* Login.swift */,
+				41FF06C72917371C000CA08E /* OnboardView.swift */,
+				41FF06C929173CAF000CA08E /* HomeView.swift */,
+				41FF06CB29174097000CA08E /* SettleUpView.swift */,
+				41FF06CD29175D19000CA08E /* CreateGroupView.swift */,
+				41FF06D129175E2E000CA08E /* ListOfGroupsView.swift */,
+				41FF06D3291761C4000CA08E /* GroupView.swift */,
+				41FF06D529176208000CA08E /* AddExpenseView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
