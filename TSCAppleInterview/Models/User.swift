@@ -16,7 +16,9 @@ struct User: Identifiable, Hashable {
         hasher.combine(id)
     }
     
-    var id: UUID
+    var id: String {
+        return name 
+    }
     let name: String
     var groups: [Group]
 }

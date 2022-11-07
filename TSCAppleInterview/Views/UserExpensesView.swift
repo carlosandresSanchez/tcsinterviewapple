@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+
+
+
+
 struct UserExpensesView: View {
     @ObservedObject private var vm: UserExpensesViewModel
     
@@ -28,7 +32,7 @@ struct UserExpensesView: View {
                     .sheet(isPresented: $showingSheet) {
                         SettleUpView()
                     }
-                    Text("Total: $\(String(format: "%.2f", vm.balance))")
+                    Text("Balance: $\(String(format: "%.2f", vm.balance))")
                     .frame(maxWidth: .infinity)
                 }
                 .padding(.horizontal)
@@ -47,7 +51,7 @@ struct UserExpensesView: View {
             Spacer()
             switch expenseViewModel.debtType {
             case .owns(let amount):
-                Text("You own $\(String(format: "%.2f", amount))")
+                Text("You own \(expenseViewModel.expense.paiBy.name) $\(String(format: "%.2f", amount))")
                     .foregroundColor(.red)
             case .owned(let amount):
                 Text("You are owned $\(String(format: "%.2f", amount))")
@@ -60,25 +64,15 @@ struct UserExpensesView: View {
 struct UserExpensesView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let carlos = User(id: UUID(),
-                   name: "Carlos",
-                   groups: [])
         
-        let juan = User(id: UUID(),
-                   name: "Juan",
-                   groups: [])
+        var balance = Balance()
+        balance.addExpense(expense: expense1)
+        balance.addExpense(expense: expense2)
         
-        let sergio = User(id: UUID(),
-                   name: "Sergio",
-                   groups: [])
-        
-        let expense1 = Expense(amount: 100, paiBy: carlos, splits: Expense.Splits.users([juan, sergio]), description: "Batman")
-        
-        let expense2 = Expense(amount: 200, paiBy: sergio, splits: Expense.Splits.users([juan, carlos]), description: "Hello 2")
         
         let vm = UserExpensesViewModel(expenses: [expense1,
                                                  expense2],
-                                       balance: 100.0,
+                                       balance: balance.getBalanceForUser(user: carlos),
                                        user: carlos )
         return UserExpensesView(vm: vm)
     }
