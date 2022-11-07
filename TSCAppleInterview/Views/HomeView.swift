@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @ObservedObject var vm: HomeViewModel
+    
+    init(vm: HomeViewModel) {
+        self.vm = vm
+    }
+    
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
                 Text("Home page")
                 HStack {
-                    Text("Welcome user_name")
+                    Text("Welcome \(vm.username)!")
                     Spacer()
                 }
                 .padding(.horizontal)
@@ -44,6 +51,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(vm: HomeViewModel(username: "Carlos"))
     }
 }
